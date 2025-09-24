@@ -1,0 +1,25 @@
+В нашей системе можно сменить никнейм один раз. Для этого нужно ввести е-мейл/пароль от аккаунта Mojang с уже приобретенным Minectaft'ом. При этом Вы потеряете все статусы на всех серверах, но, возможно, получите взамен статусы, приобретенные под Вашим ником от официального аккаунта. Учтите! Таким образом сменить ник можно лишь дин раз! Отвязать аккаунт либо сменить ник после смены ника лицензионного аккаунта Minecraft нельзя!
+<form method="post" enctype="multipart/form-data" class="form-horizontal">
+
+            <input type="hidden" name="method" value="verify" /> 
+            <div class="form-group">
+              <label class="col-lg-2 control-label" for="auth-login">Логин (e-mail):</label>
+              <div class="col-lg-10" id="auth-login">
+                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span><input style="width:250px" id="auth-login" class="form-control emailValidationNone" type="email" name="mojang_login" placeholder="Логин от аккаунта Mojang" /></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="col-lg-2 control-label" for="auth-login">Пароль:</label>
+              <div class="col-lg-10" id="auth-login">
+                <div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span><input style="width:250px" id="auth-login" class="form-control" type="password" name="mojang_password" placeholder="Пароль от аккаунта Mojang" /></div>
+              </div>
+            </div>
+            
+            
+             <div class="form-group">
+               <div class="col-lg-offset-2 col-lg-10">
+                 <input class="btn btn-default" type="submit" value="Изменить" />
+               </div>
+             </div> 
+			 
+</form>

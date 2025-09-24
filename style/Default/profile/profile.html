@@ -1,0 +1,53 @@
+<?php echo $message; ?>
+
+<div class="form-block">
+
+<div class="block-header">Настройки аккаунта</div>
+<div class="block-line"></div>
+
+    <div class="navbar navbar-default" role="navigation">
+        <div class="navbar-header">
+			<div class="navbar-brand"><?php echo $player; ?></div>
+            <ul class="nav navbar-nav">
+               <li class="active"><a href="#tab1" data-toggle="tab">Информация</a></li>
+               <li><a href="#tab2" data-toggle="tab">Настройки</a></li>
+               <li><a href="#tab3" data-toggle="tab">Дополнительно</a></li>
+            </ul>
+        </div>
+    </div>
+
+	<div class="tabbable" style="display: inline-block;"><div class="tab-content">
+	  
+		<div class="tab-pane active" id="tab1" style="margin-top: 6px;">
+			
+			<?php echo $profile_info ?>
+			
+		</div>        
+
+		<div class="tab-pane" id="tab2" >
+		
+		<form id="profile-update" autocomplete="off" action="action.php" method="post" enctype="multipart/form-data" class="form-horizontal" role="form">
+
+            <input type="hidden" name="method" value="profile" /> 
+
+            <?php echo $profile_inputs ?>
+                
+             <div class="form-group">
+               <div class="col-lg-offset-2 col-lg-10">
+                 <input id="profile-button" class="btn btn-default" type="submit" onclick="UpdateProfile(); return false" value="Изменить" />
+               </div>
+             </div> 
+			 
+        </form>
+		
+		</div>
+
+		<div class="tab-pane" id="tab3" >
+
+            <?php echo $profile_mojang ?>
+		
+		</div>
+		
+	</div></div>	
+	
+</div>
